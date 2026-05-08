@@ -10,7 +10,7 @@ print(subtraction)
 multipli = a * b
 print(multipli)
 
-division = b / a # it will show action division value like 2.0 
+division = b / a # it will show actual division value like 2.0 
 print(division)
 
 integer_division = b // a # it will remove from . it shows only integer values like 2

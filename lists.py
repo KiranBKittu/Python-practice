@@ -12,7 +12,13 @@ print("Server 1 IP address is :",server_1) # we can use string also in double co
 #========================= Slicing =================================
 # Slicing (start_index:end_index), as end_index in python in inclusive
 simple_slicing = servers[1:4]
-print("This are slicing indexes",simple_slicing)
+print("This are indexes", simple_slicing)
+simple_slicing = servers[1:]
+print("This are indexes after 1", simple_slicing)
+simple_slicing = servers[:4]
+print("This are slicing index from starting to 4 indexed",simple_slicing)
+simple_slicing = servers[:]
+print("This are slicing index to get all",simple_slicing)
 
 """ text = "Python"
 
@@ -20,8 +26,8 @@ print(text[1:4])
 output : yth
 P  y  t  h  o  n
 0  1  2  3  4  5
-Slice [1:4] means:
 
+Slice [1:4] means:
 Start from index 1 ✅ (y)
 Stop before index 4 ❌ (o not included)
 So included indexes are: 1, 2, 3 """
@@ -44,7 +50,7 @@ P   y   t   h   o   n
 -6  -5  -4  -3  -2  -1 """
 #======================= Length of Indexing ===================================
 print(len(text)) # to get length of the string
-#==========================================================
+#====================== Replace ====================================
 # List is a mutable datatype
 # Immutable: once defined it can't be changed eg: tuples, sets
 print("Before modify:", servers)
@@ -108,10 +114,16 @@ print(servers[::-1]) # in Python is used to reverse a list (or string, tuple, et
 start → empty → start from beginning
 end → empty → go till end
 step → -1 → move backwards one step """
-#========================= Sorting =================================
-servers = ["3", "1", "2"]
-sorting = sorted(servers) # To sorting order
-print(servers, sorting)
+#========================= sort & sorted =================================
+numbers = [4, 1, 3, 2]
+numbers.sort()
+print(numbers)
+new_list = sorted(numbers)
+print(new_list)
+print(sorted(numbers, reverse=True))
+
+""" "Here sort() changed the original list itself."
+"sorted() created a new sorted list and kept the original list unchanged." """
 #========================= Remove & Copy =================================
 servers = ["172.19.30.90","172.19.30.91",True, 123, 138.00]
 servers_1 = servers.copy()
