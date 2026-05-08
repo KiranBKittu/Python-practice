@@ -9,3 +9,6 @@ sample['a'] = 10
 print(sample)
 
 # we can change values but we can't change keys, Keys in dictionaries, once defined can't be changed
+# This should be of immutable datatype for e.g : tuples, string
+#print(dir(dict))
+print(sample.keys(), sample.values(), sample.items())
