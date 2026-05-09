@@ -18,8 +18,8 @@ print(sample[::-1])
 
 sample = "Hello, How are you doing ??"
 
-print(sample.split(" "))
-print("#".join(sample.split(" "))) # Instead of space adding # to the string
+print(sample.split(" ")) # splitting the string
+print("#".join(sample.split(" "))) # joining string  and adding * Instead of space
 
 # Concatination : joining two strings
 print ("a"+"*"+"b") # a*b
