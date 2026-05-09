@@ -135,7 +135,7 @@ print(servers, servers_1)
 
 1. Reverse a list
 2. sort vs sorted
-3. Integer division vs floor division
+3. Integer division vs float division
 4. Shallow copy (Inplace operation)
 5. Multi indexing
 6. append vs extend
